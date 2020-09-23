@@ -9,6 +9,7 @@
 ## 1. You need to choose a room to begin chatting 
 
 <img src="https://github.com/ihebXxxjaouadi/socket.io-Chat_App-With_Rooms/blob/master/images/before-chat.PNG" width="800" />
+<hr/>
 <img src="https://github.com/ihebXxxjaouadi/socket.io-Chat_App-With_Rooms/blob/master/images/chose-room.PNG" width="800" />
 
 ## 2. As yous see each room  seperate to the other rooms
