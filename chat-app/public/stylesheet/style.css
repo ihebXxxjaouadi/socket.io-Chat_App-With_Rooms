@@ -1,0 +1,202 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.formContainer {
+    width: 280px;
+    margin: 10px;
+    padding: 5px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.block_login_user {
+    position: absolute;
+    top: 30%;
+}
+
+.block_send_message {
+    position: absolute;
+    bottom: 2px;
+}
+
+.titleContainer {
+    height: 25px;
+    background-color: deeppink;
+    box-shadow: 1px 1px 3px deeppink;
+}
+
+.titleContainer > p {
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+
+.block_show_message {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 250px;
+    overflow: auto;
+}
+
+.block_show_message::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.block_show_message::-webkit-scrollbar-thumb {
+    background: lightpink;
+}
+
+
+.block_show_message::-webkit-scrollbar-thumb:hover {
+    background: pink;
+}
+
+
+
+.input-container {
+    height: 34px;
+    width: 190px;
+    position: absolute;
+    float: left;
+}
+
+
+input[type="text"] {
+    padding-left: 10px;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid pink;
+    background: none;
+    outline: none;
+}
+
+#animation-line, #animation-line2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    border-bottom: 2px solid deeppink;
+    transition: 0.5s linear ;
+}
+
+input[type="submit"] {
+    height: 34px;
+    width: 60px;
+    margin-left: 5px;
+    float: right;
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid deeppink;
+    border-radius: 2px;
+    background: none;
+    outline: none;
+    color: white;
+    background-color: deeppink;
+    box-shadow: 1px 1px 5px deeppink;
+    transition: 0.1s linear ;
+}
+
+input[type="text"]::placeholder {
+    color: lightpink;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 1px 1px 1px deeppink;
+}
+
+.myMessage, .otherMessage, .serverMessageContainer {
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.myMessageContainer, .otherMessageContainer, .serverMessageContainer  {
+    clear: both;
+    color: lightgray;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.myMessageContainer {
+    float: right;
+}
+
+.otherMessageContainer {
+    float: left;
+}
+
+.serverMessageContainer {
+    color: lightgray;
+    font-family: cursive;
+    margin-left: 70px;
+}
+
+
+.myMessage {
+    background-color: lightskyblue;
+}
+
+.otherMessage {
+    background-color: lightpink;
+}
+
+.from {
+    font-family: cursive;
+}
+
+#div-typing-message {
+    position: absolute;
+    bottom: 70px;
+    left: 80px;
+    color: lightgray;
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: 600;
+   
+}
+
+.hiddenForm {
+    display: none;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: deeppink;
+    padding: 1px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

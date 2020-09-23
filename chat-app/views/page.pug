@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheet/style.css')
+  body
+    .container
+      .titleContainer
+        p(id="title")
+      form(action="" id="our-login")
+        .formContainer.block_login_user 
+          .input-container
+            input(type="text" id="user-name" placeholder="user name")
+            #animation-line
+          input(type="submit", value="Login" class="button-login") 
+      form(action="" id="our-room" class="hiddenForm")
+        .formContainer.block_send_message 
+          .input-container
+            input(type="text" id="message" placeholder="typing message...")
+            #animation-line2
+          input(type="submit", value="send" )
+        .block_show_message
+          #room-show-message 
+        #div-typing-message
+    .footer &copy; made it by iheb    
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/config.js")

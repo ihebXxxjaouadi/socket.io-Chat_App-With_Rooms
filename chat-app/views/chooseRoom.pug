@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+    head
+        title Document
+        link(rel="stylesheet", href="stylesheet/roomStyle.css")
+    body
+        h1 Choose your room
+        ul(class="menu")
+            each nam in namespaces
+                li
+                    a(href="/chat/"+nam)= nam   
+        .footer &copy; made it by iheb 
